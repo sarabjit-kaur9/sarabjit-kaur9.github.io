@@ -28,7 +28,35 @@
   <section id="home" class="section">
     <div class="intro">
       <h2>Welcome to My Portfolio</h2>
-      <p>I’m  skilled in Python and SQL </p>
+      <!-- Add this where you want the quotes to appear -->
+<section id="motivational-quotes" style="max-width: 600px; margin: 2rem auto; padding: 1rem; border: 2px solid #4a90e2; border-radius: 8px; background-color: #f0f8ff; text-align: center; font-family: Arial, sans-serif;">
+  <h2 style="color: #2c3e50;">Motivational Quote</h2>
+  <p id="quote-text" style="font-size: 1.2rem; font-style: italic; color: #34495e; min-height: 60px;">Loading quote...</p>
+  <button onclick="showQuote()" style="background-color: #4a90e2; color: white; border: none; padding: 0.6rem 1.2rem; border-radius: 5px; cursor: pointer; font-size: 1rem;">New Quote</button>
+</section>
+
+<script>
+  const quotes = [
+    "Believe in yourself and all that you are.",
+    "Every day is a new opportunity to grow.",
+    "Success comes to those who persevere.",
+    "Dream big, work hard, stay focused.",
+    "Hard work beats talent when talent doesn’t work hard.",
+    "Stay positive, work hard, make it happen.",
+    "Small steps every day lead to big results."
+    "Success is the sum of small efforts repeated daily."
+  ];
+
+  function showQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById('quote-text').textContent = quotes[randomIndex];
+  }
+
+  // Show a quote as soon as the page loads
+  window.onload = showQuote;
+</script>
+
+      
     </div>
   </section>
 
