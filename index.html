@@ -1,195 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarabjit Kaur | Portfolio</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #1f2933;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #111827;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: #ffffff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-      background-color: #ffffff;
-      margin-top: 20px;
-      border-radius: 6px;
-    }
-
-    h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-    }
-
-    /* Blog styles */
-    .blog-post {
-      margin-bottom: 25px;
-    }
-
-    .blog-post h3 {
-      margin-bottom: 5px;
-      color: #1f2933;
-    }
-
-    .blog-post p {
-      margin: 5px 0;
-    }
-
-    .blog-post a {
-      color: #2563eb;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .blog-post a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      background-color: #1f2933;
-      color: #ffffff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarabjit Kaur | Books Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #6c5ce7;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .book-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+        .book-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .book-card h3 {
+            margin: 1rem 0 0.5rem 0;
+        }
+        .book-card p {
+            padding: 0 1rem 1rem 1rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .book-card a {
+            display: inline-block;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: white;
+            background: #6c5ce7;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        .book-card a:hover {
+            background: #4834d4;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            color: #777;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-  <h1>Sarabjit Kaur</h1>
-  <p>Postgraduate in Computer Applications (MCA) | Python | Web Fundamentals</p>
+    <h1>Sarabjit Kaur</h1>
+    <p>Explore my published books on Notion Press</p>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#blog">Blog</a>
-  <a href="#contact">Contact</a>
-</nav>
+<div class="books-container">
+    <!-- Book 1 -->
+    <div class="book-card">
+        <!--<img src="images/harmony-of-echoes.jpg" alt="Harmony of Echoes Cover">-->
+        <h3>Harmony of Echoes</h3>
+        <p>A journey of hope, music, and human connection.</p>
+        <a href="https://notionpress.com/book/harmony-of-echoes" target="_blank">View on Notion Press</a>
+    </div>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a post graduate (Master of Computer Applications) with a strong interest in
-    Python, web technologies, cybersecurity awareness, and research-oriented learning.
-    I continuously work on improving my technical and analytical skills while
-    building meaningful projects and content.
-  </p>
-</section>
+    <!-- Book 2 -->
+    <div class="book-card">
+     <!--    <img src="images/whispers-of-the-heart.jpg" alt="Whispers of the Heart Cover">-->
+        <h3>Whispers of the Heart: Tales of Hope and Harmony</h3>
+        <p>Short stories filled with inspiration and heartfelt moments.</p>
+        <a href="https://notionpress.com/book/whispers-of-the-heart" target="_blank">View on Notion Press</a>
+    </div>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Python Programming</li>
-    <li>HTML, CSS, JavaScript</li>
-    <li>Angular (Beginner)</li>
-    <li>Software Testing Basics</li>
-    <li>Research & Analytical Thinking</li>
-  </ul>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <ul>
-    <li>Examination Supervision Process – Core Java</li>
-    <li>Survey Questionnaire System</li>
-    <li>GitHub Pages Portfolio Website</li>
-  </ul>
-</section>
-
-<!-- BLOG SECTION -->
-<section id="blog">
-  <h2>My Blogs</h2>
-  <div id="blog-posts">
-    <p>Loading blog posts...</p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <strong>sarabjit090.kaur@gmail.com</strong></p>
-  <p>GitHub: <a href="https://github.com/sarabjit-kaur9" target="_blank">github.com/sarabjit-kaur9</a></p>
-</section>
+    <!-- Book 3 -->
+    <div class="book-card">
+      <!--   <img src="images/empower-your-path.jpg" alt="Empower Your Path Cover">-->
+        <h3>Empower Your Path: A Guide to Self-Discovery and Fulfillment</h3>
+        <p>A practical guide to unlocking your potential and living fully.</p>
+        <a href="https://notionpress.com/book/empower-your-path" target="_blank">View on Notion Press</a>
+    </div>
+</div>
 
 <footer>
-  <p>© 2025 Sarabjit Kaur. All Rights Reserved.</p>
+    &copy; 2026 Sarabjit Kaur | Visit my <a href="https://notionpress.com/author/968992" target="_blank">Notion Press Author Page</a>
 </footer>
-
-<!-- BLOGGER FETCH SCRIPT -->
-<script>
-  const blogFeedUrl =
-    "https://sarab-cybersecurity.blogspot.com/feeds/posts/default?alt=json&max-results=5";
-
-  fetch(blogFeedUrl)
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById("blog-posts");
-      container.innerHTML = "";
-
-      const posts = data.feed.entry;
-      if (!posts) {
-        container.innerHTML = "<p>No blog posts found.</p>";
-        return;
-      }
-
-      posts.forEach(post => {
-        const title = post.title.$t;
-        const link = post.link.find(l => l.rel === "alternate").href;
-        const publishedDate = new Date(post.published.$t).toDateString();
-
-        const postDiv = document.createElement("div");
-        postDiv.className = "blog-post";
-
-        postDiv.innerHTML = `
-          <h3>${title}</h3>
-          <p><small>Published on ${publishedDate}</small></p>
-          <a href="${link}" target="_blank">Read Full Article →</a>
-        `;
-
-        container.appendChild(postDiv);
-      });
-    })
-    .catch(error => {
-      document.getElementById("blog-posts").innerHTML =
-        "<p>Error loading blog posts.</p>";
-      console.error(error);
-    });
-</script>
 
 </body>
 </html>
